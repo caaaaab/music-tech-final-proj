@@ -9,7 +9,10 @@ document.querySelector("#play").addEventListener("click", async function () {
         // trigger the attack immediately
         synth.triggerAttack("C4", now);
     });
-
+document.querySelector("#play2").addEventListener("click", async function () {
+        await Tone.start();
+        synth.triggerAttack("E5", now);
+    });
 document.querySelector("#stop").addEventListener("click", async function () {
         synth.triggerRelease(now); 
     })
