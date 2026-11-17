@@ -12,7 +12,10 @@ document.querySelector("#play").addEventListener("click", async function () {
 document.querySelector("#stop").addEventListener("click", async function () {
         synth.triggerRelease(now); 
     })
-
+document.querySelector("#play2").addEventListener("click", async function () {
+        await Tone.start();
+        synth.triggerAttack("E4", now);
+})
 
 
 //get data from CSV
